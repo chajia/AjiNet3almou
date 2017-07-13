@@ -6,8 +6,7 @@ export class Training {
   private _Description: string;
   private _Type: string; // CoursSoutien or formation
   private _Place: string;
-  private _id_Formateur:number;
-
+  private _id_Formateur: number;
 
   constructor(id_Training: number, Label: string, DateBeginning: string, Description: string, Type: string, Place: string, id_Formateur: number) {
     this._id_Training = id_Training;
@@ -77,13 +76,13 @@ export class Training {
   }
 
   public toString(): string {
-    let resultat = "{ _id_Training: "+this._id_Training
-      +"_Label: "+this._Label
-      +" _DateBeginning:  "+this._DateBeginning
-      +"_Description:   "+this._Description
-      +"_Type:  "+this._Type
-      +"_Place:  "+this._Place
-      +"_id_Formateur:  "+this._id_Formateur+"}";
+    const resultat = '{ _id_Training: ' + this._id_Training
+      + '_Label: ' + this._Label
+      + ' _DateBeginning:  ' + this._DateBeginning
+      + '_Description:   ' + this._Description
+      + '_Type:  ' + this._Type
+      + '_Place:  ' + this._Place
+      + '_id_Formateur:  ' + this._id_Formateur + '}';
     return resultat;
   }
 

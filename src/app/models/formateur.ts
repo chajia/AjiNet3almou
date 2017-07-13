@@ -6,11 +6,12 @@ export class Formateur {
   private _Phone: string;
   private _Email: string;
   private _Adress: string;
-  private _StudyLevel:string;
-  private _Photo:string;
+  private _StudyLevel: string;
+  private _Photo: string;
 
 
-  constructor(id_Formateur: number, FirstName: string, LastName: string, Phone: string, Email: string, Adress: string, StudyLevel: string, Photo: string) {
+  constructor(id_Formateur: number, FirstName: string, LastName: string, Phone: string,
+              Email: string, Adress: string, StudyLevel: string, Photo: string) {
     this._id_Formateur = id_Formateur;
     this._FirstName = FirstName;
     this._LastName = LastName;
@@ -87,14 +88,14 @@ export class Formateur {
   }
 
   public toString(): string {
-    let resultat = "{ _id_Formateur: "+this._id_Formateur
-      +"_FirstName: "+this._FirstName
-      +" LastName:  "+this._LastName
-      +"_Phone:   "+this._Phone
-      +"_Email:  "+this._Email
-      +"_Adress:  "+this._Adress
-      +"_StudyLevel:  "+this._StudyLevel
-      +"_Photo:  "+this._Phone +"}";
+    const resultat = '{ _id_Formateur: ' + this._id_Formateur
+      + '_FirstName: ' + this._FirstName
+      + ' LastName:  ' + this._LastName
+      + '_Phone:   ' + this._Phone
+      + '_Email:  ' + this._Email
+      + '_Adress:  ' + this._Adress
+      + '_StudyLevel:  ' + this._StudyLevel
+      + '_Photo:  ' + this._Phone + '}';
     return resultat;
   }
 }
